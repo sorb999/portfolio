@@ -829,7 +829,9 @@
 										<i class="icon-globe-outline"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="#">asaurabh077@gmail.com</a></p>
+										<p>
+											<a href="mailto:asaurabh077@gmail.com">asaurabh077@gmail.com</a>
+										</p>
 									</div>
 								</div>
 
@@ -871,8 +873,12 @@
 												<textarea name="" id="message" cols="30" rows="7" class="form-control"
 													placeholder="Message"></textarea>
 											</div>
+											<p id="msgBlock" style="color: red; display: none;">
+												This feature will be available soon. You can email me @ 
+												<a href="mailto:asaurabh077@gmail.com">asaurabh077@gmail.com</a>
+											</p>
 											<div class="form-group">
-												<input type="submit" class="btn btn-primary btn-send-message"
+												<input type="button" onclick="onSendMessage()" class="btn btn-primary btn-send-message"
 													value="Send Message">
 											</div>
 										</form>
@@ -906,6 +912,11 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script>
+		function onSendMessage(params) {
+			$('#msgBlock').show();
+		}
+	</script>
 
 </body>
 
